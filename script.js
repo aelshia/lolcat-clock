@@ -78,11 +78,13 @@ if (time == partyTime){
 
 timeEventJs.innerText = messageText;
 lolcatimg.src = image;
-};
+
 showCurrentTime();
-	setInterval(updates,sec);
+};
 var sec=1000;
 updates();
+setInterval(updates,sec);
+
 //making the party button work
 var partyEvent = function() {
 	if (isPartyTime=== false){
